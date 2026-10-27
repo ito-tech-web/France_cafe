@@ -1,0 +1,364 @@
+/* ============================================
+   メニューページ専用スタイル（menu.css）
+============================================ */
+
+/* ============ リード文 ============ */
+.menu-lead-section {
+  padding-top: 48px;
+  padding-bottom: 0;
+}
+
+.menu-lead-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-lead-text {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  line-height: 2.2;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.menu-lead-note {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+/* ============ カテゴリータブナビ ============ */
+.menu-tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 48px 40px 0;
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.menu-tab {
+  padding: 14px 32px;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-text-light);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.menu-tab:hover {
+  color: var(--color-dark);
+  border-bottom-color: var(--color-accent);
+}
+
+.menu-tab.active {
+  color: var(--color-dark);
+  border-bottom-color: var(--color-gold);
+  font-weight: 600;
+}
+
+/* ============ メニューカテゴリー（表示/非表示） ============ */
+.menu-category {
+  display: block;
+}
+
+.menu-category[hidden] {
+  display: none;
+}
+
+/* ============ カードグリッド形式（モーニング・スイーツ） ============ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.menu-item {
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.menu-item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item-body {
+  padding: 24px;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.menu-item-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-dark);
+  line-height: 1.5;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu-item-name-en {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.menu-item-price {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--color-gold);
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+.menu-item-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.9;
+}
+
+/* バッジ */
+.menu-badge-new {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  border-radius: 2px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.menu-badge-sale {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  background-color: var(--color-mid);
+  color: var(--color-white);
+  border-radius: 2px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* ============ リスト形式（コーヒー・ドリンク・フード） ============ */
+.menu-list-group {
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.menu-list-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu-list-group-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  letter-spacing: 0.1em;
+  padding-bottom: 12px;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.menu-list {
+  width: 100%;
+}
+
+.menu-list-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(188, 170, 164, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.menu-list-item:hover {
+  background-color: rgba(200, 169, 126, 0.04);
+}
+
+.menu-list-item--recommend {
+  position: relative;
+}
+
+.menu-list-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.menu-list-name {
+  font-size: 0.92rem;
+  color: var(--color-text);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu-list-desc-inline {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.03em;
+}
+
+.menu-list-price {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-gold);
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+.menu-recommend-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  padding: 2px 7px;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  border-radius: 2px;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* ============ アレルギー注記 ============ */
+.menu-allergy-note {
+  max-width: 760px;
+  margin: 48px auto 0;
+  padding: 20px 24px;
+  border-left: 3px solid var(--color-gold);
+  background-color: var(--color-white);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.9;
+}
+
+.menu-allergy-note strong {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* ============ テイクアウト ============ */
+.takeout-section {
+  background-color: var(--color-dark);
+}
+
+.takeout-block {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.takeout-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+
+.takeout-body {
+  font-size: 0.88rem;
+  color: var(--color-accent);
+  line-height: 2.2;
+  letter-spacing: 0.04em;
+}
+
+/* ============ レスポンシブ ============ */
+@media (max-width: 900px) {
+  .menu-tab-nav {
+    padding: 40px 24px 0;
+    gap: 4px;
+  }
+
+  .menu-tab {
+    padding: 12px 20px;
+    font-size: 0.75rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-tab-nav {
+    padding: 32px 16px 0;
+    gap: 2px;
+  }
+
+  .menu-tab {
+    padding: 10px 14px;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .menu-item-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-list-item {
+    flex-wrap: wrap;
+  }
+
+  .menu-list-price {
+    margin-left: auto;
+  }
+
+  .takeout-title {
+    font-size: 1.5rem;
+  }
+}

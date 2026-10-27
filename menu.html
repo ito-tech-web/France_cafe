@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Matin（ル・マタン）のメニュー。スペシャルティコーヒー、手作りスイーツ、モーニング、季節のドリンクなど。">
+  <title>Menu | Le Matin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー ============ -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="site-logo" aria-label="Le Matin トップページへ">
+      <span class="logo-en">Le Matin</span>
+      <span class="logo-jp">ル・マタン</span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="access.html">Access</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="menu.html">Menu</a>
+    <a href="news.html">News</a>
+    <a href="access.html">Access</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ ページヒーロー ============ -->
+    <div class="page-hero">
+      <p class="page-hero-label fade-in">— Our Menu —</p>
+      <h1 class="page-hero-title fade-in fade-in-delay-1">Menu</h1>
+      <p class="page-hero-sub fade-in fade-in-delay-2">毎日丁寧に、素材と向き合って。</p>
+    </div>
+
+    <!-- パンくず -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Menu</span>
+    </div>
+
+    <!-- ============ メニューリード文 ============ -->
+    <section class="section menu-lead-section">
+      <div class="section-inner menu-lead-inner fade-in">
+        <p class="menu-lead-text">
+          Le Matinのメニューは、季節ごとに一部が変わります。<br>
+          その日の仕入れや旬の食材によってラインナップが異なる場合がございます。<br>
+          最新情報はInstagramまたはお知らせページをご確認ください。
+        </p>
+        <p class="menu-lead-note">
+          ※ 表示価格はすべて税込みです。<br>
+          ※ アレルギーをお持ちの方はスタッフまでお申し付けください。
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ カテゴリータブナビ ============ -->
+    <div class="menu-tab-nav" role="tablist" aria-label="メニューカテゴリー">
+      <button class="menu-tab active" data-target="morning" role="tab" aria-selected="true" aria-controls="morning">
+        Morning
+      </button>
+      <button class="menu-tab" data-target="coffee" role="tab" aria-selected="false" aria-controls="coffee">
+        Coffee
+      </button>
+      <button class="menu-tab" data-target="drinks" role="tab" aria-selected="false" aria-controls="drinks">
+        Drinks
+      </button>
+      <button class="menu-tab" data-target="sweets" role="tab" aria-selected="false" aria-controls="sweets">
+        Sweets
+      </button>
+      <button class="menu-tab" data-target="food" role="tab" aria-selected="false" aria-controls="food">
+        Food
+      </button>
+    </div>
+
+    <!-- ============ モーニング ============ -->
+    <section class="menu-category" id="morning" role="tabpanel" aria-labelledby="tab-morning">
+      <div class="section section--warm">
+        <div class="section-inner">
+          <div class="section-header fade-in">
+            <span class="section-label">9:00 – 11:00</span>
+            <h2 class="section-title">Morning</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">朝のひとときを、ゆっくりと。すべてのモーニングにドリンクが付きます。</p>
+          </div>
+
+          <div class="menu-grid">
+
+            <article class="menu-item fade-in fade-in-delay-1">
+              <div class="menu-item-img img-placeholder">モーニングA写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">モーニングA<span class="menu-item-name-en"> — Classic</span></h3>
+                  <span class="menu-item-price">¥850</span>
+                </div>
+                <p class="menu-item-desc">
+                  厚切りトースト・ゆで卵・季節のサラダ・ヨーグルト。
+                  選べるドリンク付き（コーヒー・紅茶・オレンジジュース）。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-2">
+              <div class="menu-item-img img-placeholder">モーニングB写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">モーニングB<span class="menu-item-name-en"> — French</span></h3>
+                  <span class="menu-item-price">¥980</span>
+                </div>
+                <p class="menu-item-desc">
+                  フレンチトースト・旬のフルーツ添え・ヨーグルト。
+                  自家製メープルシロップ付き。選べるドリンク付き。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-3">
+              <div class="menu-item-img img-placeholder">モーニングC写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">モーニングC<span class="menu-item-name-en"> — Granola</span></h3>
+                  <span class="menu-item-price">¥920</span>
+                </div>
+                <p class="menu-item-desc">
+                  手作りグラノーラ・豆乳または牛乳・旬のフルーツ・
+                  全粒粉クロワッサン。選べるドリンク付き。
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ コーヒー ============ -->
+    <section class="menu-category" id="coffee" role="tabpanel" aria-labelledby="tab-coffee" hidden>
+      <div class="section">
+        <div class="section-inner">
+          <div class="section-header fade-in">
+            <span class="section-label">Specialty Coffee</span>
+            <h2 class="section-title">Coffee</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">
+              シングルオリジン豆を一杯ずつハンドドリップ。<br>
+              豆の産地・焙煎度はスタッフにお気軽にお尋ねください。
+            </p>
+          </div>
+
+          <!-- ホット -->
+          <div class="menu-list-group fade-in">
+            <h3 class="menu-list-group-title">Hot</h3>
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">ハンドドリップコーヒー</span>
+                  <span class="menu-list-desc-inline">本日の豆・一杯ずつ丁寧に</span>
+                </div>
+                <span class="menu-list-price">¥680</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">本日のスペシャルティ</span>
+                  <span class="menu-list-desc-inline">週替わり・産地説明カード付き</span>
+                </div>
+                <span class="menu-list-price">¥820</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">カフェラテ</span>
+                  <span class="menu-list-desc-inline">エスプレッソ + スチームミルク</span>
+                </div>
+                <span class="menu-list-price">¥720</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">カプチーノ</span>
+                  <span class="menu-list-desc-inline">きめ細かいフォームミルク</span>
+                </div>
+                <span class="menu-list-price">¥720</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">フラットホワイト</span>
+                  <span class="menu-list-desc-inline">濃いめのエスプレッソ + ベルベットミルク</span>
+                </div>
+                <span class="menu-list-price">¥750</span>
+              </li>
+              <li class="menu-list-item menu-list-item--recommend">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">
+                    カフェモカ
+                    <span class="menu-recommend-badge">Recommend</span>
+                  </span>
+                  <span class="menu-list-desc-inline">ベルギーチョコレート使用</span>
+                </div>
+                <span class="menu-list-price">¥780</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- アイス -->
+          <div class="menu-list-group fade-in">
+            <h3 class="menu-list-group-title">Iced</h3>
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">アイスコーヒー</span>
+                  <span class="menu-list-desc-inline">水出し・12時間抽出</span>
+                </div>
+                <span class="menu-list-price">¥680</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">アイスカフェラテ</span>
+                  <span class="menu-list-desc-inline">ミルクは豆乳に変更可（+¥50）</span>
+                </div>
+                <span class="menu-list-price">¥720</span>
+              </li>
+              <li class="menu-list-item menu-list-item--recommend">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">
+                    コーヒーゼリーラテ
+                    <span class="menu-recommend-badge">Recommend</span>
+                  </span>
+                  <span class="menu-list-desc-inline">自家製コーヒーゼリー + ミルク</span>
+                </div>
+                <span class="menu-list-price">¥820</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ドリンク（コーヒー以外） ============ -->
+    <section class="menu-category" id="drinks" role="tabpanel" aria-labelledby="tab-drinks" hidden>
+      <div class="section section--warm">
+        <div class="section-inner">
+          <div class="section-header fade-in">
+            <span class="section-label">Non-Coffee &amp; Tea</span>
+            <h2 class="section-title">Drinks</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">コーヒーが苦手な方にも、ゆっくりとくつろいでいただけるよう。</p>
+          </div>
+
+          <div class="menu-list-group fade-in">
+            <h3 class="menu-list-group-title">Tea &amp; Herbal</h3>
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">セイロン紅茶</span>
+                  <span class="menu-list-desc-inline">ストレート / ミルクティー</span>
+                </div>
+                <span class="menu-list-price">¥620</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">アールグレイ</span>
+                  <span class="menu-list-desc-inline">ホット / アイス</span>
+                </div>
+                <span class="menu-list-price">¥650</span>
+              </li>
+              <li class="menu-list-item menu-list-item--recommend">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">
+                    チャイラテ
+                    <span class="menu-recommend-badge">Recommend</span>
+                  </span>
+                  <span class="menu-list-desc-inline">スパイスが香る、ホットのみ</span>
+                </div>
+                <span class="menu-list-price">¥720</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">カモミールハーブティー</span>
+                  <span class="menu-list-desc-inline">ホット / アイス</span>
+                </div>
+                <span class="menu-list-price">¥650</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-list-group fade-in">
+            <h3 class="menu-list-group-title">Seasonal &amp; Soft</h3>
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">季節のフルーツソーダ</span>
+                  <span class="menu-list-desc-inline">内容は月ごとに変わります</span>
+                </div>
+                <span class="menu-list-price">¥680</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">自家製レモネード</span>
+                  <span class="menu-list-desc-inline">はちみつ仕立て・ホット / アイス</span>
+                </div>
+                <span class="menu-list-price">¥650</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">オレンジジュース</span>
+                  <span class="menu-list-desc-inline">生搾り（季節限定）</span>
+                </div>
+                <span class="menu-list-price">¥580</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">ホットチョコレート</span>
+                  <span class="menu-list-desc-inline">ベルギー産ダークチョコ使用</span>
+                </div>
+                <span class="menu-list-price">¥720</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ スイーツ ============ -->
+    <section class="menu-category" id="sweets" role="tabpanel" aria-labelledby="tab-sweets" hidden>
+      <div class="section">
+        <div class="section-inner">
+          <div class="section-header fade-in">
+            <span class="section-label">Homemade</span>
+            <h2 class="section-title">Sweets</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">
+              毎朝オーナーが手作りする焼き菓子たち。<br>
+              数に限りがございます。売切れの際はご了承ください。
+            </p>
+          </div>
+
+          <div class="menu-grid">
+
+            <article class="menu-item fade-in fade-in-delay-1">
+              <div class="menu-item-img img-placeholder">季節のタルト写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">
+                    季節のタルト
+                    <span class="menu-badge-new">本日あり</span>
+                  </h3>
+                  <span class="menu-item-price">¥580</span>
+                </div>
+                <p class="menu-item-desc">
+                  旬のフルーツと自家製カスタードクリームを、
+                  サクサクのパートシュクレに。季節により内容が変わります。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-2">
+              <div class="menu-item-img img-placeholder">バスクチーズケーキ写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">バスクチーズケーキ</h3>
+                  <span class="menu-item-price">¥560</span>
+                </div>
+                <p class="menu-item-desc">
+                  表面はほろ苦く、中はとろける食感。
+                  クリームチーズにこだわった、Le Matinの定番スイーツ。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-3">
+              <div class="menu-item-img img-placeholder">フィナンシェ写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">フィナンシェ（2個）</h3>
+                  <span class="menu-item-price">¥380</span>
+                </div>
+                <p class="menu-item-desc">
+                  焦がしバターの香りが広がる、しっとり濃厚なフィナンシェ。
+                  コーヒーとの相性が抜群です。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-1">
+              <div class="menu-item-img img-placeholder">スコーン写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">スコーン + クロテッドクリーム</h3>
+                  <span class="menu-item-price">¥480</span>
+                </div>
+                <p class="menu-item-desc">
+                  サクッとした外側としっとりした内側が自慢のスコーン。
+                  クロテッドクリームとジャム添え。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-2">
+              <div class="menu-item-img img-placeholder">ガトーショコラ写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">ガトーショコラ</h3>
+                  <span class="menu-item-price">¥580</span>
+                </div>
+                <p class="menu-item-desc">
+                  カカオ70%のチョコレートを使用したリッチな一品。
+                  生クリームとベリーソース添え。
+                </p>
+              </div>
+            </article>
+
+            <article class="menu-item fade-in fade-in-delay-3">
+              <div class="menu-item-img img-placeholder">セット写真</div>
+              <div class="menu-item-body">
+                <div class="menu-item-header">
+                  <h3 class="menu-item-name">
+                    コーヒー＋スイーツ セット
+                    <span class="menu-badge-sale">お得</span>
+                  </h3>
+                  <span class="menu-item-price">¥1,100〜</span>
+                </div>
+                <p class="menu-item-desc">
+                  本日のコーヒー（ホット or アイス）と
+                  お好きなスイーツ1点のセット。単品合計より¥100お得。
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ フード ============ -->
+    <section class="menu-category" id="food" role="tabpanel" aria-labelledby="tab-food" hidden>
+      <div class="section section--warm">
+        <div class="section-inner">
+          <div class="section-header fade-in">
+            <span class="section-label">Light Meal</span>
+            <h2 class="section-title">Food</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">軽食は11:00〜ご注文いただけます（モーニング時間を除く）。</p>
+          </div>
+
+          <div class="menu-list-group fade-in">
+            <ul class="menu-list">
+              <li class="menu-list-item menu-list-item--recommend">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">
+                    本日のサンドウィッチ
+                    <span class="menu-recommend-badge">Daily</span>
+                  </span>
+                  <span class="menu-list-desc-inline">内容は日替わり・スープ付き</span>
+                </div>
+                <span class="menu-list-price">¥980</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">アボカドトースト</span>
+                  <span class="menu-list-desc-inline">自家製ライ麦パン・温泉卵添え</span>
+                </div>
+                <span class="menu-list-price">¥880</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">グリルチーズトースト</span>
+                  <span class="menu-list-desc-inline">3種のチーズ・はちみつがけ</span>
+                </div>
+                <span class="menu-list-price">¥780</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">季節のスープ + パン</span>
+                  <span class="menu-list-desc-inline">根菜・豆類など旬の素材で</span>
+                </div>
+                <span class="menu-list-price">¥680</span>
+              </li>
+              <li class="menu-list-item">
+                <div class="menu-list-main">
+                  <span class="menu-list-name">チーズプレート</span>
+                  <span class="menu-list-desc-inline">3種のチーズ・ドライフルーツ・クラッカー</span>
+                </div>
+                <span class="menu-list-price">¥980</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- アレルギー注記 -->
+          <div class="menu-allergy-note fade-in">
+            <p>
+              <strong>アレルギーについて：</strong>
+              Le Matinでは小麦・卵・乳製品・ナッツ類を使用したメニューがございます。
+              アレルギーをお持ちの方は、ご注文の際にスタッフへお申し付けください。
+              可能な範囲でご対応いたします。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ テイクアウト案内 ============ -->
+    <section class="section takeout-section">
+      <div class="section-inner">
+        <div class="takeout-block fade-in">
+          <span class="section-label">Takeout</span>
+          <h2 class="takeout-title">テイクアウトもできます</h2>
+          <div class="divider" style="margin: 16px auto 24px;"></div>
+          <p class="takeout-body">
+            ドリンク・焼き菓子（フィナンシェ・スコーンなど）はテイクアウトが可能です。<br>
+            お気軽にスタッフまでお声がけください。<br>
+            ギフト用のラッピングも承ります（+¥100）。
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ フッター ============ -->
+  <footer class="site-footer">
+    <p class="footer-logo">Le Matin</p>
+    <p class="footer-tagline">— Specialty Coffee &amp; Homemade Sweets —</p>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="concept.html">Concept</a>
+      <a href="menu.html">Menu</a>
+      <a href="news.html">News</a>
+      <a href="access.html">Access</a>
+    </nav>
+    <div class="footer-divider"></div>
+    <p class="footer-info">
+      〒000-0000 東京都○○区○○町 1-2-3<br>
+      営業時間 9:00 – 18:00 ／ 定休日：火曜・第3水曜<br>
+      TEL: 00-0000-0000
+    </p>
+    <p class="footer-copy">© 2026 Le Matin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

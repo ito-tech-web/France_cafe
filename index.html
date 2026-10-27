@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Matin（ル・マタン）— 朝の光のような温かさと、ゆったりした時間を。こだわりのコーヒーと手作りスイーツで、あなたの日常に小さな贅沢を。">
+  <title>Le Matin | 喫茶店 ル・マタン</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー ============ -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="site-logo" aria-label="Le Matin トップページへ">
+      <span class="logo-en">Le Matin</span>
+      <span class="logo-jp">ル・マタン</span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="access.html">Access</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="menu.html">Menu</a>
+    <a href="news.html">News</a>
+    <a href="access.html">Access</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ ヒーローセクション ============ -->
+    <section class="hero" aria-label="メインビジュアル">
+      <div class="hero-bg">
+        <!-- 背景：実際の店内写真に差し替えてください -->
+        <div class="hero-bg-img img-placeholder" style="height:100%;">
+          <span>店内写真<br>（横長・明るいカフェ雰囲気）</span>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-label fade-in">— Specialty Coffee &amp; Homemade Sweets —</p>
+        <h1 class="hero-title fade-in fade-in-delay-1">
+          朝の光のような<br>温かさを、あなたに。
+        </h1>
+        <p class="hero-sub fade-in fade-in-delay-2">
+          一杯のコーヒーが、今日を少し豊かにする。
+        </p>
+        <div class="hero-btns fade-in fade-in-delay-3">
+          <a href="menu.html" class="btn btn-outline-light">メニューを見る</a>
+          <a href="access.html" class="btn btn-outline-light">アクセス</a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="下へスクロール">
+        <span class="hero-scroll-line"></span>
+        <span class="hero-scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ お知らせバー ============ -->
+    <div class="news-bar" id="about">
+      <div class="news-bar-inner">
+        <span class="news-bar-label">News</span>
+        <a href="news.html" class="news-bar-item">
+          <time datetime="2026-10-01">2026.10.01</time>
+          <span>グランドオープンのお知らせ。皆様のご来店を心よりお待ちしております。</span>
+        </a>
+        <a href="news.html" class="news-bar-more">すべて見る →</a>
+      </div>
+    </div>
+
+    <!-- ============ アバウトセクション ============ -->
+    <section class="section about-section">
+      <div class="section-inner about-grid">
+
+        <div class="about-img fade-in">
+          <div class="img-placeholder" style="height: 480px;">
+            店内の雰囲気写真<br>（テーブル・カップ・光）
+          </div>
+          <div class="about-img-deco"></div>
+        </div>
+
+        <div class="about-text fade-in fade-in-delay-2">
+          <span class="section-label">About Le Matin</span>
+          <h2 class="section-title">「また来たい」と<br>思える場所へ。</h2>
+          <div class="divider" style="margin: 0 0 28px;"></div>
+          <p class="about-body">
+            Le Matin（ル・マタン）は、フランス語で「朝」を意味します。<br>
+            一日のはじまり、または疲れた午後のひととき——<br>
+            誰かと過ごす時間も、一人でゆっくりする時間も、<br>
+            どちらも大切にしたいと思い、この店を開きました。
+          </p>
+          <p class="about-body" style="margin-top: 20px;">
+            シングルオリジンのスペシャルティコーヒーと、<br>
+            毎日丁寧に仕込む手作りのスイーツ。<br>
+            素材の声を聞きながら、丁寧に作り続けることが<br>
+            私たちのこだわりです。
+          </p>
+          <a href="concept.html" class="btn btn-outline" style="margin-top: 36px;">こだわりを見る</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 特徴3ポイント ============ -->
+    <section class="section section--warm features-section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">Our Features</span>
+          <h2 class="section-title">Le Matinの3つのこだわり</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card fade-in fade-in-delay-1">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 8C15.16 8 8 15.16 8 24s7.16 16 16 16 16-7.16 16-16S32.84 8 24 8z" stroke="#C8A97E" stroke-width="1.5" fill="none"/>
+                <path d="M24 16v8l6 3" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="2" fill="#C8A97E"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">スペシャルティコーヒー</h3>
+            <p class="feature-text">
+              産地まで厳選したシングルオリジンの豆を、<br>
+              オーナー自ら焙煎。一杯ずつ丁寧にハンドドリップで<br>
+              お届けします。
+            </p>
+          </article>
+
+          <article class="feature-card fade-in fade-in-delay-2">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="10" y="20" width="28" height="18" rx="2" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M18 20V14a6 6 0 0 1 12 0v6" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 29h8" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">手作りスイーツ</h3>
+            <p class="feature-text">
+              季節の素材を使った焼き菓子やタルトを、<br>
+              毎朝オーナーが仕込みます。<br>
+              添加物不使用、体にやさしいおやつをどうぞ。
+            </p>
+          </article>
+
+          <article class="feature-card fade-in fade-in-delay-3">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 36V16a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v20" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M8 36h32" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 28h8M20 22h8" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">ゆったりとした空間</h3>
+            <p class="feature-text">
+              本棚のある落ち着いた店内。テーブル間の距離にも<br>
+              こだわり、読書や仕事にも集中できる<br>
+              居心地のよい空間を目指しています。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ メニュー紹介（抜粋） ============ -->
+    <section class="section menu-preview-section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">Our Menu</span>
+          <h2 class="section-title">おすすめメニュー</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            季節によって内容が変わります。旬の味わいをお楽しみください。
+          </p>
+        </div>
+
+        <div class="menu-preview-grid">
+          <article class="menu-preview-card fade-in fade-in-delay-1">
+            <div class="menu-preview-img img-placeholder" style="height:220px;">
+              コーヒー写真
+            </div>
+            <div class="menu-preview-body">
+              <span class="card-label">Coffee</span>
+              <h3 class="card-title">ハンドドリップコーヒー</h3>
+              <p class="card-text">その日の豆に合わせた温度と抽出速度で、丁寧に一杯ずつ。</p>
+              <p class="menu-price">¥680〜</p>
+            </div>
+          </article>
+
+          <article class="menu-preview-card fade-in fade-in-delay-2">
+            <div class="menu-preview-img img-placeholder" style="height:220px;">
+              スイーツ写真
+            </div>
+            <div class="menu-preview-body">
+              <span class="card-label">Sweets</span>
+              <h3 class="card-title">季節のタルト</h3>
+              <p class="card-text">旬の果物と自家製カスタードのタルト。毎日焼き上げます。</p>
+              <p class="menu-price">¥580〜</p>
+            </div>
+          </article>
+
+          <article class="menu-preview-card fade-in fade-in-delay-3">
+            <div class="menu-preview-img img-placeholder" style="height:220px;">
+              モーニング写真
+            </div>
+            <div class="menu-preview-body">
+              <span class="card-label">Morning</span>
+              <h3 class="card-title">モーニングセット</h3>
+              <p class="card-text">トースト・ゆで卵・サラダ付き。朝9時から11時まで。</p>
+              <p class="menu-price">¥850〜</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-footer fade-in">
+          <a href="menu.html" class="btn btn-primary">メニュー一覧を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ギャラリー帯 ============ -->
+    <section class="gallery-strip" aria-label="店内ギャラリー">
+      <div class="gallery-strip-inner">
+        <div class="gallery-strip-item img-placeholder">店内写真①</div>
+        <div class="gallery-strip-item img-placeholder">コーヒー写真</div>
+        <div class="gallery-strip-item img-placeholder">スイーツ写真</div>
+        <div class="gallery-strip-item img-placeholder">外観写真</div>
+        <div class="gallery-strip-item img-placeholder">テーブル写真</div>
+      </div>
+    </section>
+
+    <!-- ============ アクセス（抜粋） ============ -->
+    <section class="section section--warm access-preview-section">
+      <div class="section-inner access-preview-grid">
+
+        <div class="access-preview-map fade-in">
+          <div class="img-placeholder" style="height:320px;">
+            Google マップ<br>（access.htmlで埋め込み）
+          </div>
+        </div>
+
+        <div class="access-preview-info fade-in fade-in-delay-2">
+          <span class="section-label">Access</span>
+          <h2 class="section-title" style="text-align:left; font-size:1.8rem;">店舗情報</h2>
+          <div class="divider" style="margin: 0 0 28px;"></div>
+
+          <dl class="access-dl">
+            <div class="access-dl-row">
+              <dt>住所</dt>
+              <dd>〒000-0000<br>東京都○○区○○町 1-2-3</dd>
+            </div>
+            <div class="access-dl-row">
+              <dt>最寄り駅</dt>
+              <dd>○○線「○○駅」徒歩5分</dd>
+            </div>
+            <div class="access-dl-row">
+              <dt>営業時間</dt>
+              <dd>9:00 – 18:00（L.O. 17:30）</dd>
+            </div>
+            <div class="access-dl-row">
+              <dt>定休日</dt>
+              <dd>火曜日・第3水曜日</dd>
+            </div>
+            <div class="access-dl-row">
+              <dt>電話</dt>
+              <dd><a href="tel:00-0000-0000">00-0000-0000</a></dd>
+            </div>
+          </dl>
+
+          <a href="access.html" class="btn btn-outline" style="margin-top: 32px;">詳しいアクセスを見る</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CTAバナー ============ -->
+    <section class="cta-banner section--dark">
+      <div class="cta-banner-inner fade-in">
+        <span class="section-label" style="color: var(--color-gold);">Open Daily 9:00 – 18:00</span>
+        <h2 class="cta-title">今日も、Le Matinでお待ちしています。</h2>
+        <p class="cta-sub">2026年10月1日、グランドオープン</p>
+        <a href="access.html" class="btn btn-outline-light" style="margin-top: 32px;">アクセスを確認する</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ フッター ============ -->
+  <footer class="site-footer">
+    <p class="footer-logo">Le Matin</p>
+    <p class="footer-tagline">— Specialty Coffee &amp; Homemade Sweets —</p>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="concept.html">Concept</a>
+      <a href="menu.html">Menu</a>
+      <a href="news.html">News</a>
+      <a href="access.html">Access</a>
+    </nav>
+    <div class="footer-divider"></div>
+    <p class="footer-info">
+      〒000-0000 東京都○○区○○町 1-2-3<br>
+      営業時間 9:00 – 18:00 ／ 定休日：火曜・第3水曜<br>
+      TEL: 00-0000-0000
+    </p>
+    <p class="footer-copy">© 2026 Le Matin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

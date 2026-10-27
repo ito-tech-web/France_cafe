@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Matin（ル・マタン）からのお知らせ・最新情報。営業情報やイベント、新メニューなどをお届けします。">
+  <title>お知らせ | Le Matin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー ============ -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="site-logo" aria-label="Le Matin トップページへ">
+      <span class="logo-en">Le Matin</span>
+      <span class="logo-jp">ル・マタン</span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="access.html">Access</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="menu.html">Menu</a>
+    <a href="news.html">News</a>
+    <a href="access.html">Access</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ ページヒーロー ============ -->
+    <div class="page-hero">
+      <p class="page-hero-label fade-in">— Latest Information —</p>
+      <h1 class="page-hero-title fade-in fade-in-delay-1">News</h1>
+      <p class="page-hero-sub fade-in fade-in-delay-2">お知らせ・最新情報</p>
+    </div>
+
+    <!-- パンくず -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>News</span>
+    </div>
+
+    <!-- ============ ニュース本体 ============ -->
+    <section class="section news-section">
+      <div class="section-inner news-layout">
+
+        <!-- メインコンテンツ -->
+        <div class="news-main">
+
+          <!-- カテゴリーフィルター -->
+          <div class="news-filter" role="group" aria-label="カテゴリーフィルター">
+            <button class="news-filter-btn active" data-filter="all">すべて</button>
+            <button class="news-filter-btn" data-filter="info">営業情報</button>
+            <button class="news-filter-btn" data-filter="menu">新メニュー</button>
+            <button class="news-filter-btn" data-filter="event">イベント</button>
+            <button class="news-filter-btn" data-filter="other">その他</button>
+          </div>
+
+          <!-- お知らせ一覧 -->
+          <ul class="news-list" id="news-list">
+
+            <!-- 記事①：グランドオープン -->
+            <li class="news-article fade-in" data-category="info">
+              <article>
+                <div class="news-article-img-wrap">
+                  <div class="img-placeholder news-article-img">
+                    オープン告知画像
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-10-01">2026.10.01</time>
+                    <span class="news-cat news-cat--info">営業情報</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    グランドオープンのお知らせ
+                  </h2>
+                  <p class="news-article-text">
+                    2026年10月1日（木）、Le Matin（ル・マタン）がグランドオープンいたします。
+                    皆様のご来店を心よりお待ちしております。
+                    オープン当日はご来店いただいた方全員に、自家製フィナンシェをプレゼントいたします（数量限定・なくなり次第終了）。
+                  </p>
+                  <p class="news-article-text">
+                    営業時間：9:00〜18:00（L.O. 17:30）<br>
+                    定休日：火曜日・第3水曜日
+                  </p>
+                  <a href="#" class="news-article-link">続きを読む →</a>
+                </div>
+              </article>
+            </li>
+
+            <!-- 記事②：秋の新メニュー -->
+            <li class="news-article fade-in fade-in-delay-1" data-category="menu">
+              <article>
+                <div class="news-article-img-wrap">
+                  <div class="img-placeholder news-article-img">
+                    秋メニュー画像
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-10-01">2026.10.01</time>
+                    <span class="news-cat news-cat--menu">新メニュー</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    秋の新メニューが登場します
+                  </h2>
+                  <p class="news-article-text">
+                    オープンと同時に、秋の新メニューをご用意します。
+                    栗と和栗のモンブランタルト、焼きりんごとシナモンのラテなど、
+                    この季節ならではの味わいをお楽しみください。
+                  </p>
+                  <a href="menu.html" class="news-article-link">メニューを見る →</a>
+                </div>
+              </article>
+            </li>
+
+            <!-- 記事③：臨時休業のお知らせ -->
+            <li class="news-article fade-in fade-in-delay-2" data-category="info">
+              <article>
+                <div class="news-article-img-wrap news-article-img-wrap--noimg">
+                  <div class="news-article-noimg">
+                    <span>Le Matin</span>
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-10-15">2026.10.15</time>
+                    <span class="news-cat news-cat--info">営業情報</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    10月22日（木）臨時休業のお知らせ
+                  </h2>
+                  <p class="news-article-text">
+                    誠に恐れ入りますが、2026年10月22日（木）は店内メンテナンスのため臨時休業とさせていただきます。
+                    ご来店をご予定されていたお客様にはご不便をおかけし、大変申し訳ございません。
+                  </p>
+                  <a href="#" class="news-article-link">続きを読む →</a>
+                </div>
+              </article>
+            </li>
+
+            <!-- 記事④：読書イベント -->
+            <li class="news-article fade-in fade-in-delay-1" data-category="event">
+              <article>
+                <div class="news-article-img-wrap">
+                  <div class="img-placeholder news-article-img">
+                    読書会イベント画像
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-11-03">2026.11.03</time>
+                    <span class="news-cat news-cat--event">イベント</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    「Le Matinの読書会」第1回を開催します
+                  </h2>
+                  <p class="news-article-text">
+                    11月3日（祝）午後2時より、店内にて小さな読書会を開催します。
+                    テーマは「旅にまつわる本」。お好きな本を一冊持ち寄って、
+                    コーヒーを飲みながらゆるやかに語り合いましょう。
+                    参加費：ドリンク1杯分のみ。定員8名・要予約。
+                  </p>
+                  <a href="access.html#contact" class="news-article-link">お問い合わせ・予約はこちら →</a>
+                </div>
+              </article>
+            </li>
+
+            <!-- 記事⑤：Instagram開設 -->
+            <li class="news-article fade-in fade-in-delay-2" data-category="other">
+              <article>
+                <div class="news-article-img-wrap news-article-img-wrap--noimg">
+                  <div class="news-article-noimg">
+                    <span>Le Matin</span>
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-09-20">2026.09.20</time>
+                    <span class="news-cat news-cat--other">その他</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    Instagramアカウントを開設しました
+                  </h2>
+                  <p class="news-article-text">
+                    Le MatinのInstagramアカウント（@lematin_cafe）を開設しました。
+                    毎日のメニューや店内の様子、季節のお便りなどを発信していきます。
+                    ぜひフォローしてください。
+                  </p>
+                  <a href="#" class="news-article-link">Instagramを見る →</a>
+                </div>
+              </article>
+            </li>
+
+            <!-- 記事⑥：冬の限定メニュー予告 -->
+            <li class="news-article fade-in fade-in-delay-1" data-category="menu">
+              <article>
+                <div class="news-article-img-wrap">
+                  <div class="img-placeholder news-article-img">
+                    冬メニュー予告画像
+                  </div>
+                </div>
+                <div class="news-article-body">
+                  <div class="news-article-meta">
+                    <time class="news-date" datetime="2026-11-15">2026.11.15</time>
+                    <span class="news-cat news-cat--menu">新メニュー</span>
+                  </div>
+                  <h2 class="news-article-title">
+                    冬の限定メニュー、12月より登場予定
+                  </h2>
+                  <p class="news-article-text">
+                    今冬は「温かくて、少し贅沢」をテーマに限定メニューをご用意する予定です。
+                    ホットチョコレートのバリエーションやスパイスを効かせた焼き菓子など、
+                    詳細は11月末にお知らせします。お楽しみに。
+                  </p>
+                  <a href="news.html" class="news-article-link">続きを読む →</a>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+
+          <!-- ページネーション（デザインのみ） -->
+          <nav class="news-pagination" aria-label="ページナビゲーション">
+            <span class="news-page news-page--current" aria-current="page">1</span>
+            <a href="#" class="news-page">2</a>
+            <a href="#" class="news-page">3</a>
+            <span class="news-page-ellipsis">…</span>
+            <a href="#" class="news-page news-page--next" aria-label="次のページ">→</a>
+          </nav>
+
+        </div>
+
+        <!-- サイドバー -->
+        <aside class="news-sidebar">
+
+          <!-- カテゴリー -->
+          <div class="sidebar-widget fade-in">
+            <h3 class="sidebar-widget-title">Category</h3>
+            <ul class="sidebar-cat-list">
+              <li>
+                <a href="#" class="sidebar-cat-link" data-filter="all">
+                  <span>すべて</span>
+                  <span class="sidebar-cat-count">6</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-cat-link" data-filter="info">
+                  <span>営業情報</span>
+                  <span class="sidebar-cat-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-cat-link" data-filter="menu">
+                  <span>新メニュー</span>
+                  <span class="sidebar-cat-count">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-cat-link" data-filter="event">
+                  <span>イベント</span>
+                  <span class="sidebar-cat-count">1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-cat-link" data-filter="other">
+                  <span>その他</span>
+                  <span class="sidebar-cat-count">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 最新記事 -->
+          <div class="sidebar-widget fade-in fade-in-delay-1">
+            <h3 class="sidebar-widget-title">Recent Posts</h3>
+            <ul class="sidebar-recent-list">
+              <li class="sidebar-recent-item">
+                <a href="#">
+                  <time>2026.11.15</time>
+                  <span>冬の限定メニュー、12月より登場予定</span>
+                </a>
+              </li>
+              <li class="sidebar-recent-item">
+                <a href="#">
+                  <time>2026.11.03</time>
+                  <span>「Le Matinの読書会」第1回を開催します</span>
+                </a>
+              </li>
+              <li class="sidebar-recent-item">
+                <a href="#">
+                  <time>2026.10.15</time>
+                  <span>10月22日（木）臨時休業のお知らせ</span>
+                </a>
+              </li>
+              <li class="sidebar-recent-item">
+                <a href="#">
+                  <time>2026.10.01</time>
+                  <span>グランドオープンのお知らせ</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SNS -->
+          <div class="sidebar-widget fade-in fade-in-delay-2">
+            <h3 class="sidebar-widget-title">Follow Us</h3>
+            <p class="sidebar-sns-text">
+              日々の様子はInstagramで更新中。<br>
+              ぜひフォローしてください。
+            </p>
+            <a href="#" class="sidebar-sns-btn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+              @lematin_cafe
+            </a>
+          </div>
+
+          <!-- 店舗情報ミニ -->
+          <div class="sidebar-widget sidebar-shopinfo fade-in fade-in-delay-3">
+            <h3 class="sidebar-widget-title">Shop Info</h3>
+            <dl class="sidebar-shopinfo-dl">
+              <div>
+                <dt>営業時間</dt>
+                <dd>9:00 – 18:00</dd>
+              </div>
+              <div>
+                <dt>定休日</dt>
+                <dd>火曜・第3水曜</dd>
+              </div>
+              <div>
+                <dt>TEL</dt>
+                <dd><a href="tel:00-0000-0000">00-0000-0000</a></dd>
+              </div>
+            </dl>
+            <a href="access.html" class="sidebar-access-link">アクセスを見る →</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ フッター ============ -->
+  <footer class="site-footer">
+    <p class="footer-logo">Le Matin</p>
+    <p class="footer-tagline">— Specialty Coffee &amp; Homemade Sweets —</p>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="concept.html">Concept</a>
+      <a href="menu.html">Menu</a>
+      <a href="news.html">News</a>
+      <a href="access.html">Access</a>
+    </nav>
+    <div class="footer-divider"></div>
+    <p class="footer-info">
+      〒000-0000 東京都○○区○○町 1-2-3<br>
+      営業時間 9:00 – 18:00 ／ 定休日：火曜・第3水曜<br>
+      TEL: 00-0000-0000
+    </p>
+    <p class="footer-copy">© 2026 Le Matin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Matin（ル・マタン）の店舗情報・アクセスページ。住所・営業時間・定休日・アクセス方法などをご案内しています。">
+  <title>店舗情報・アクセス | Le Matin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="access.css">
+</head>
+<body>
+
+  <!-- ============ ヘッダー ============ -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="site-logo" aria-label="Le Matin トップページへ">
+      <span class="logo-en">Le Matin</span>
+      <span class="logo-jp">ル・マタン</span>
+    </a>
+    <nav class="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="access.html" class="active">Access</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="concept.html">Concept</a>
+    <a href="menu.html">Menu</a>
+    <a href="news.html">News</a>
+    <a href="access.html">Access</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ ページヒーロー ============ -->
+    <div class="page-hero">
+      <p class="page-hero-label fade-in">— Store Information —</p>
+      <h1 class="page-hero-title fade-in fade-in-delay-1">Access</h1>
+      <p class="page-hero-sub fade-in fade-in-delay-2">皆様のご来店をお待ちしております。</p>
+    </div>
+
+    <!-- パンくず -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Access</span>
+    </div>
+
+    <!-- ============ マップ + 基本情報 ============ -->
+    <section class="section access-main-section">
+      <div class="section-inner access-main-grid">
+
+        <!-- Googleマップ埋め込みエリア -->
+        <div class="access-map-wrap fade-in">
+          <!--
+            ▼ Googleマップの埋め込みコードをここに貼り付けてください
+            手順：
+            1. Google マップ（maps.google.com）でお店の住所を検索
+            2. 「共有」→「地図を埋め込む」をクリック
+            3. 表示された <iframe> コードをこの <div> の中に貼り付ける
+            4. 下のプレースホルダー div は削除してください
+          -->
+          <div class="access-map-placeholder img-placeholder">
+            <div>
+              <p style="font-size:0.9rem; margin-bottom:12px;">Google マップ</p>
+              <p style="font-size:0.75rem; opacity:0.7;">
+                Googleマップの埋め込みコードを<br>
+                ここに貼り付けてください
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 基本情報 -->
+        <div class="access-info fade-in fade-in-delay-2">
+          <span class="section-label">Shop Info</span>
+          <h2 class="access-info-title">Le Matin</h2>
+          <p class="access-info-sub">ル・マタン</p>
+          <div class="divider" style="margin: 20px 0 28px;"></div>
+
+          <dl class="access-detail-list">
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                住所
+              </dt>
+              <dd>
+                〒000-0000<br>
+                東京都○○区○○町 1-2-3<br>
+                ○○ビル 1F
+              </dd>
+            </div>
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                アクセス
+              </dt>
+              <dd>
+                ○○線「○○駅」東口より徒歩5分<br>
+                ○○線「○○駅」北口より徒歩8分
+              </dd>
+            </div>
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                営業時間
+              </dt>
+              <dd>
+                <span class="access-time-row">
+                  <span class="access-time-label">平日</span>
+                  <span>9:00 – 18:00（L.O. 17:30）</span>
+                </span>
+                <span class="access-time-row">
+                  <span class="access-time-label">土日祝</span>
+                  <span>8:30 – 18:30（L.O. 18:00）</span>
+                </span>
+              </dd>
+            </div>
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 9h18M8 2v3M16 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M8 14h3M8 17h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                定休日
+              </dt>
+              <dd>
+                火曜日・第3水曜日<br>
+                <span style="font-size:0.78rem; color:var(--color-text-light);">※祝日の場合は営業、翌平日に振替休業</span>
+              </dd>
+            </div>
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                電話番号
+              </dt>
+              <dd>
+                <a href="tel:00-0000-0000" class="access-tel">00-0000-0000</a><br>
+                <span style="font-size:0.78rem; color:var(--color-text-light);">※営業時間内にお気軽にどうぞ</span>
+              </dd>
+            </div>
+
+            <div class="access-detail-row">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 4h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M4 4l8 9 8-9" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                メール
+              </dt>
+              <dd>
+                <a href="mailto:info@lematin-cafe.jp" class="access-mail">info@lematin-cafe.jp</a>
+              </dd>
+            </div>
+
+          </dl>
+
+          <!-- SNSリンク -->
+          <div class="access-sns">
+            <p class="access-sns-label">Follow Us</p>
+            <div class="access-sns-links">
+              <a href="#" class="access-sns-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                </svg>
+                Instagram
+              </a>
+              <a href="#" class="access-sns-btn" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 駐車場・設備情報 ============ -->
+    <section class="section section--warm facilities-section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">Facilities</span>
+          <h2 class="section-title">店内設備・ご利用案内</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="facilities-grid">
+
+          <div class="facility-item fade-in fade-in-delay-1">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="16" width="32" height="20" rx="2" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M14 16V12a10 10 0 0 1 20 0v4" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="24" cy="26" r="3" stroke="#C8A97E" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">Wi-Fi</h3>
+            <p class="facility-desc">無料Wi-Fiをご利用いただけます。パスワードはご来店の際にお尋ねください。</p>
+          </div>
+
+          <div class="facility-item fade-in fade-in-delay-2">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="8" width="16" height="24" rx="2" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M20 36h8M24 36v4" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 40h28" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">電源コンセント</h3>
+            <p class="facility-desc">各テーブルに電源コンセントをご用意しています。お仕事・勉強にもご活用ください。</p>
+          </div>
+
+          <div class="facility-item fade-in fade-in-delay-3">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 8h24v28H12z" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M16 16h16M16 22h10M16 28h8" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 40h32" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">本棚</h3>
+            <p class="facility-desc">店主がセレクトした書籍を自由にご覧いただけます。デザイン・旅・料理・文学など。</p>
+          </div>
+
+          <div class="facility-item fade-in fade-in-delay-1">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="20" r="10" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M24 30v10M18 40h12" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 17l2 2 4-4" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">ベビーカー入店可</h3>
+            <p class="facility-desc">お子様連れのお客様も安心してお越しください。席のご案内はスタッフにお申し付けを。</p>
+          </div>
+
+          <div class="facility-item fade-in fade-in-delay-2">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="28" height="28" rx="3" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M10 20h28M10 30h28M20 10v28M30 10v28" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">キャッシュレス対応</h3>
+            <p class="facility-desc">現金のほか、クレジットカード・交通系IC・PayPayなど各種キャッシュレスに対応。</p>
+          </div>
+
+          <div class="facility-item fade-in fade-in-delay-3">
+            <div class="facility-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C15.16 8 8 15.16 8 24s7.16 16 16 16 16-7.16 16-16S32.84 8 24 8z" stroke="#C8A97E" stroke-width="1.5"/>
+                <path d="M24 16v8l4 2" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="facility-name">時間制限なし</h3>
+            <p class="facility-desc">混雑時を除き、お時間を気にせずゆっくりお過ごしいただけます。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 道順案内 ============ -->
+    <section class="section directions-section">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-label">How to Get Here</span>
+          <h2 class="section-title">道順のご案内</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="directions-grid">
+
+          <div class="direction-block fade-in fade-in-delay-1">
+            <div class="direction-header">
+              <span class="direction-badge">電車</span>
+              <h3 class="direction-title">○○線「○○駅」から</h3>
+            </div>
+            <ol class="direction-steps">
+              <li>東口改札を出て、右に曲がります。</li>
+              <li>○○通りを直進し、2つ目の交差点を左折。</li>
+              <li>○○郵便局を過ぎてすぐ、右手のビル1階です。</li>
+              <li>目印は木製の看板「Le Matin」です。</li>
+            </ol>
+            <p class="direction-time">🚶 東口より徒歩約5分</p>
+          </div>
+
+          <div class="direction-block fade-in fade-in-delay-2">
+            <div class="direction-header">
+              <span class="direction-badge">バス</span>
+              <h3 class="direction-title">バス停「○○前」から</h3>
+            </div>
+            <ol class="direction-steps">
+              <li>○○系統バス「○○前」バス停で下車。</li>
+              <li>バス進行方向に向かって直進約2分。</li>
+              <li>○○公園の角を右折するとすぐです。</li>
+            </ol>
+            <p class="direction-time">🚶 バス停より徒歩約2分</p>
+          </div>
+
+          <div class="direction-block fade-in fade-in-delay-3">
+            <div class="direction-header">
+              <span class="direction-badge">お車</span>
+              <h3 class="direction-title">お車でお越しの方</h3>
+            </div>
+            <ol class="direction-steps">
+              <li>店舗専用駐車場はございません。</li>
+              <li>近隣のコインパーキングをご利用ください。</li>
+              <li>○○駐車場（徒歩2分）が便利です。</li>
+            </ol>
+            <p class="direction-time" style="color: var(--color-text-light);">※近隣駐車場：約3か所あり</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ お問い合わせ ============ -->
+    <section class="section section--warm contact-section">
+      <div class="section-inner">
+        <div class="contact-block fade-in">
+          <span class="section-label">Contact</span>
+          <h2 class="contact-title">お問い合わせ</h2>
+          <div class="divider" style="margin: 16px auto 24px;"></div>
+          <p class="contact-body">
+            ご予約・貸切のご相談・その他お問い合わせは、<br>
+            お電話またはメールにてお気軽にどうぞ。
+          </p>
+          <div class="contact-methods">
+            <a href="tel:00-0000-0000" class="contact-method">
+              <span class="contact-method-label">TEL</span>
+              <span class="contact-method-value">00-0000-0000</span>
+              <span class="contact-method-note">営業時間内（9:00–18:00）</span>
+            </a>
+            <a href="mailto:info@lematin-cafe.jp" class="contact-method">
+              <span class="contact-method-label">MAIL</span>
+              <span class="contact-method-value">info@lematin-cafe.jp</span>
+              <span class="contact-method-note">2営業日以内にご返信します</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ フッター ============ -->
+  <footer class="site-footer">
+    <p class="footer-logo">Le Matin</p>
+    <p class="footer-tagline">— Specialty Coffee &amp; Homemade Sweets —</p>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="concept.html">Concept</a>
+      <a href="menu.html">Menu</a>
+      <a href="news.html">News</a>
+      <a href="access.html">Access</a>
+    </nav>
+    <div class="footer-divider"></div>
+    <p class="footer-info">
+      〒000-0000 東京都○○区○○町 1-2-3<br>
+      営業時間 9:00 – 18:00 ／ 定休日：火曜・第3水曜<br>
+      TEL: 00-0000-0000
+    </p>
+    <p class="footer-copy">© 2026 Le Matin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
